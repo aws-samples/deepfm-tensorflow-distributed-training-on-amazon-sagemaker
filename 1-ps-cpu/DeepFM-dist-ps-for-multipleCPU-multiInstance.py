@@ -18,6 +18,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+# This code is applied for TF1.x estimator API.
+
 import shutil
 import os
 import json
@@ -542,7 +544,7 @@ def main(_):
         serving_input_receiver_fn = (
             tf.estimator.export.build_raw_serving_input_receiver_fn(feature_spec)
         )
-
+        
         if FLAGS.current_host == FLAGS.hosts[0]:
             DeepFM.export_savedmodel(
                 FLAGS.servable_model_dir, serving_input_receiver_fn
