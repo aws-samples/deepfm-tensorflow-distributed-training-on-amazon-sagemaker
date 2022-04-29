@@ -1,8 +1,8 @@
-# deepfm-tensorflow-distributed-training-on-sagemaker
+# deepfm-tensorflow-distributed-training-on-amazon-sagemaker
 
 在该示例中，我们将给出两个基于Amazon SageMaker的 deepfm 分布式训练样例, 一个基于TensorFlow Parameter Server + CPU，一个基于Horovod + GPU，而这两个也是我们见到的用的比较多的方式。
 
-[English README](https://github.com/aws-samples/deepfm-tensorflow-distributed-training-on-sagemaker/blob/main/README-EN.md)
+[English README](https://github.com/aws-samples/deepfm-tensorflow-distributed-training-on-amazon-sagemaker/blob/main/README.md)
 
 
 
