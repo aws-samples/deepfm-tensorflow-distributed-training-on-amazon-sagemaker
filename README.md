@@ -45,7 +45,7 @@ if len(FLAGS.hosts) > 1:
     index = tf_config["task"]["index"]
     print("index is ", index)
 
-    #每个训练实例都会有一个parameter server进程，所以每个实例都需要一个ps的device filter
+    # As each instance will launch a parameter server process, so each instance will need a device filter for parameter server
     device_filters = ['/job:ps']
     if str(tf_config["task"]["type"]) == 'master':
         device_filters.append('/job:master')
